@@ -1,83 +1,428 @@
-\chapter{Analysis}
+\begin{document}
+
 
 \section{Introduction}
 
-\subsection{Client Identification}
 
-\subsection{Define the current system}
+	\subsection{Client Identification}
 
-\subsection{Describe the problems}
+ 
+		My Client is Paul Cox, a 54 year old mechanic. He has some experience with computers although not much. He uses computers for browsing, emails and using office programs such as word and excel for his business. He currently has a laptop running windows 7 64bit which he uses for this.
+		Paul is a self-employed car mechanic who specialises in fixing SAABs but he also runs the rest of the business including billing, stock management and booking appointments with 			customers with occasional help from his wife, Karen Cox. 	
+		The Garage is based in Cambridge but he often works at home, in Cottenham, when he is writing invoices or doing general tasks. 
+		He would like to develop a system to store the data of their customers, to book appointments and help stock control.  He would like a database to store customer information so 			that he could access it from work or home without having to transport physical files.He would like to be able to enter the amount of time and the parts used into the system to use for invoices and then have the ability to print invoice.
+		
+	\subsection{Define the current system}
+
+		The client's current system is a physical filing system which stores files into a filing cabinet. This means that data can only be accessed from one place at a time, it is easily lost, 			put back into the wrong place or duplicate files can be made for the same customer.  
+		There is also no backup so if it is damaged then the data is lost.  	
+		The way they book appointments in is by using a diary and writing in when the customer is coming in. If this book is lost or damaged then they will have no way of knowing when customers have booked appointments. 
+		
+		Currently they record information about each individual job , this is a blank piece of paper that the the time spent, parts used and other costs that occured such as oil dumping the cost
+		The current invoice system uses a book with a template that has to be manually filled in.
+		
+
+	\subsection{Describe the problems}
+	
+		There are many issues with the current system. First of all is the fact that information only has one copy and is stored with hundreds of other files, makes it hard to find quickly, 			easy to miss-place and easy to accidentally make duplicates of the same information. 
+		Sometimes instead of updating their current file a new one will be added so a customer will have two files with different information on.
+
+		Because the data is entered onto blank cards the format and type of data in each file can be inconsistent.
+
+		The data is stored in a physical filing system and doesn't have any back ups. This means if the files are lost, damaged or stolen then the data is lost and will have to be manually 			recovered
+		
+
+		Another issue is that because appointments are currently stored in a diary so you can easily find appointments by date but not by the person they are with. This means that if a 			customer has forgotten the date of their appointment they will often
+
+		The current invoice system is ok although human errors can occure since the information has to be manually entered and if a mistake is made an entirely new invoice has to be 			made since they can't be edited. Also since it is made by hand it can be hard to read for the customers.
+
+This information is sourced from the current filing system
+		mostly so if the information is not correct in the filing system then the invoice will be incorrect.
+
 
 \subsection{Section appendix}
+		
+\begin{figure}[H]
+		
+\includegraphics[width=\textwidth]{interview1}
+\caption{Part 1 of the interview}
+
+\end{figure}	
+\newpage
+\begin{figure}[H]
+
+
+\includegraphics[width=\textwidth]{interview2}	
+\caption{Part 2 of the interview}  
+
+\end{figure}	
+\newpage
+\begin{figure}[H]
+
+	  
+\includegraphics[width=\textwidth]{interview3}
+
+\end{figure}	
+\newpage
+\begin{figure}[H]
+
+\caption{Part 3 of the interview}	
+
+\includegraphics[width=\textwidth]{interview4} 
+\caption{part 4 of the interview}
+	 	  
+\end{figure}
 
 \section{Investigation}
 
-\subsection{The current system}
+	\subsection{The current system}
 
-\subsubsection{Data sources and destinations}
+	\subsubsection{Data sources and destinations}
+		There are  two data sources in the current system, the client and the business.
+		
 
-\subsubsection{Algorithms}
+\begin{tabular}{|l|p{4cm}|p{4cm}|r|}
+\hline
+Source & Data & Example & Destination\\ \hline
+Client & First name, Last name, address, postcode, phone number, email & John Handcock, 1 The Road, Cambridge, cb4 1ab, 01223 0123456  & Filing system\\ \hline
+Mechanic & Problem to be fixed & worn brake pads & appointment Diary\\ \hline
+Mechanic & parts required & brake pads & supplier \\ \hline
+Supplier & cost of parts & £8.50 & Task Sheet \\ \hline
+Mechanic & Price and date of appointment & £35.00, 01/01/15 & Customer \\ 
 
-\subsubsection{Data flow diagram}
+\hline
+\end{tabular}
 
-\subsubsection{Input Forms, Output Forms, Report Formats}
 
-\subsection{The proposed system}
 
-\subsubsection{Data sources and destinations}
+	\subsubsection{Algorithms}
+		There are currently several algorithms being used.
+		
 
-\subsubsection{Data flow diagram}
 
-\subsubsection{Data dictionary}
 
-\subsubsection{Volumetrics}
+
+
+
+		
+
+
+	\subsubsection{Data flow diagram}
+	
+	\begin{figure}[H]	
+	
+	\includegraphics[width=\textwidth]{invoices.png}
+    \caption{Invoices}
+    
+    \includegraphics[width=\textwidth]{DeterminingWhatCarToWorkOn.PNG}
+    \caption{Invoices}     
+    
+    \end{figure}
+    
+    \newpage
+    
+    \begin{figure}{H}
+    \includegraphics[width=\textwidth]{BookingJobsIn.PNG}
+    \caption{hi}
+    
+    
+    \end{figure}
+
+
+	\subsubsection{Input Forms, Output Forms, Report Formats}
+	
+	a\begin{figure}[H]
+	
+	
+	
+	\includegraphics[width=\textwidth]{image_1.jpeg}
+    \caption{This is an example of the part of the customers file that stores their address and car information.}
+    
+    \includegraphics[width=\textwidth]{image_2.jpeg}
+    \caption{This is an example of the part of the customers file that stores their service history}
+    
+    \end{figure}
+    \newpage
+	
+	
+	\begin{figure}[H]
+    
+    
+    \includegraphics[width=\textwidth]{image_3.jpeg}
+    \caption{This is an example of an invoice}
+    
+    \end{figure}
+    \newpage	
+	
+	\begin{figure}[H]  
+    
+    
+    
+    
+    \includegraphics[width=\textwidth]{image_5.jpeg}
+    \caption{This is an example of a diary entry that Paul uses to book appointments in}
+    
+    
+	\end{figure}
+	
+
+	
+		
+	
+	\subsection{The proposed system}
+		
+
+	\subsubsection{Data sources and destinations}
+
+In the proposed system the clients give information to the paul  via phone and he will then manually enter it into the system.
+
+
+
+\begin{tabular}{|l|p{4cm}|p{4cm}|r|}
+\hline
+Source & Data & Data Type & Destination\\ \hline
+client & forename & string & mechanic\\ \hline
+client & surname & string & mechanic\\ \hline
+client & addr1 & string & mechanic\\ \hline
+client & addr2 & string & mechanic\\ \hline
+client & addr3 & string & mechanic\\ \hline
+client & addr4 & string & mechanic\\ \hline
+client & postcode & string & mechanic\\ \hline
+client & email address & string & mechanic\\ \hline
+client & phone number & string & mechanic\\ \hline
+client & time of appointment & string & mechanic\\ \hline
+Mechanic & MechanicID & integar & database-job \\ \hline
+Mechanic & ClientID & integar & database - job\\ \hline
+Mechanic & forename & string & database-job\\ \hline
+Mechanic & JobID & string & database-job\\ \hline
+
+
+
+
+
+\hline
+\end{tabular}
+	
+	
+
+	\subsubsection{Data flow diagram}
+
+	
+
+	\subsubsection{Data dictionary}
+	
+\begin{tabular}{|l|p{4cm}|p{4cm}|p{4cm}|r|}
+\hline
+Name & DataType & Length & Validation & Example\\ \hline
+ClientID & Integer & 1-300 & Range & 52 \\ \hline
+ClientFirstName & String & 2-20 Characters & Length & John\\ \hline
+ClientLastName & String & 2-20 Characters & Length & Handcock \\ \hline
+ClientAddress1 & String & 4-30 Characters & Length & 1 exampledrive\\ \hline
+ClientAddress2 & String & 4-30 Characters & Length & Cottenham\\ \hline
+ClientAddress3 & String & 4-30 Characters & Length & Cambridge\\ \hline
+ClientAddress4 & String & 4-30 Characters & Length & Cambridgeshire\\ \hline
+ClientPostCode & String & 6-7 Characters & Format & CB24 8XN\\ \hline
+ClientEmail & String & 7-30 Characters & Length & example@example.oom\\ \hline
+ClientPhoneNumber & String & 11 characters & format & 01234 5678912\\ \hline
+ClientNumberPlate & String & 2-7 characters & Length & ab01 cde\\ \hline
+\end{tabular}
+
+	\subsubsection{Volumetrics}
+
+		I have chosen an initial size of 300 files since he estimated he had around 500 customers so this will cover over half. He also said that he has anywhere from 1-4 customers a day(see interview) so this should cover him for around a year because he works around 250 days per year. This can easily be increased if needed.
 
 \section{Objectives}
 
-\subsection{General Objectives}
+	\subsection{General Objectives}
+		Fast and easy to book appointments with customers.
+		
+		to be able to access customer information quickly, clearly and easily from multiple locations.
+		
+		Be able to print out invoices that are clear, easy to read and understand
+		
+		Be able to backup the data
+		
+		
+		
 
-\subsection{Specific Objectives}
+	\subsection{Specific Objectives}
+	
+	Booking appointments
+	
+	\begin{itemize}
+	
+	\item Have a calender style organiser with boxes that represent appointments
+	
+	\item minimalist theme with so it remains clear and not too cluttered 	
+	
+	\item Accessing customer files clearly layed out
+	
+	\item easy to edit, add and remove data from the database
+	
+	\end{itemize}
+	
+	\begin{itemize}
+	
+	\item 
+	
+	\end{itemize}
+	
+	Invoicing
+	
+	\begin{itemize}
+	\item automate as much of the data entry into the invoices to avoid human error and save time.
+	
+	\end{itemize}
+	
+	Backup 
+	
+	\begin{itemize}
+	
+	\item be able to back up the database incase of data loss.
+	
+	\end{itemize}
+	
 
-\subsection{Core Objectives}
+	
 
-\subsection{Other Objectives}
+	\subsection{Core Objectives}
+	
+	\begin{itemize}
+	
+	\item Be able to book clients into the system
+	
+	\item Be able to view, edit, add and remove data about the customer
+	
+	\item add data about each job into the system, such as time and parts used
+	
+	\item be able to print invoices	using data from the system 
+	
+	\end{itemize}
+
+	\subsection{Other Objectives}	
+	
+	\begin{itemize}
+	
+	\item  ask dave
+	
+	\end{itemize}
 
 \section{ER Diagrams and Descriptions}
 
-\subsection{ER Diagram}
+	\subsection{ER Diagram}
+	
+	\subsection{Entity Descriptions}
+	
+	Client(\underline{ClientID},Title,Forename,Surname,Email,Addr1,Addr2,Addr3,Addr4,Postcode,
+PhoneNumber)
 
-\subsection{Entity Descriptions}
+
+Car(\underline{RegistrationNumber}, Model, Year)
+
+
+mechanic(\underline{MechanicID})
+
+
+Appointment(\underline{AppointmentID}, ClientID, MechanicID, Date, Time)
+
+
+Job(\underline{JobID},AppointmentID,PartsUsed,OtherCosts,Timespent,TotalCost)
+
 
 \section{Object Analysis}
 
-\subsection{Object Listing}
+	\subsection{Object Listing}
+	
+	\begin{itemize}
+	
+	\item Client
+	\item Car
+	\item mechanic
+	\item Appointment
+	\item job
+	\end{itemize}
 
-\subsection{Relationship diagrams}
+	\subsection{Relationship diagrams}
 
-\subsection{Class definitions}
+	\subsection{Class definitions}
 
 \section{Other Abstractions and Graphs}
 
 \section{Constraints}
 
-\subsection{Hardware}
+	\subsection{Hardware}
+	Currently Paul uses his netbook for all off his computing needs.
+	the specification of it is:
+	
+	CPU: Intel atom @ 1.60GHz
+	RAM: 1GB
+	HDD: 160GB
+	Screen resolution:  1024 x 600
+	Operating System: Windows 7
+	
+	Paul also has access to his sons Desktop Computing if required. the specifications of it are:
+	
+	CPU: intel i5 3450
+	RAM: 8GB DDR3
+	HDD: 240gb sdd
+	screen resolution: 1920 x 1080
+	Operating System: Windows 8.1
+	
+The proposed system should be able to run on either of the machines with little impact.
 
-\subsection{Software}
+Because the netbook is portable there are no constraints on where he can use it. So providing he has an internet connection then he can use the system that is proposed.
 
-\subsection{Time}
 
-\subsection{User Knowledge}
+	
 
-\subsection{Access restrictions}
+	\subsection{Software}
+	The system should work on any version of windows that is newer than windows 7 so that shouldn't be an issue.	
+
+
+	\subsection{Time}
+	
+	The only deadline or time restriction for this project is for any specific date so will start using it when it becomes available
+
+	\subsection{User Knowledge}
+	Paul does not have any qualifications in IT, ICT or any similar subjects and does not plan on getting any. He has a moderate knowledge of computers. He can perform basic tasks such as browsing and word processing aswell as more advanced tasks such as using more advanced software to look up information about cars.
+
+	\subsection{Access restrictions}
+	
+	The proposed system should able to be accessed on any computer that the system is installed on. It will only be installed on trusted computers for Paul and other staff members to use due to to the files containing private and confidential information. This means it will have to comply with the Data Protection act.
 
 \section{Limitations}
 
-\subsection{Areas which will not be included in computerisation}
+	\subsection{Areas which will not be included in computerisation}
+	The customers information that will be in their files will still be acquired by phone call but it will be entered into the system by paul instead of into the physical filing system.
 
-\subsection{Areas considered for future computerisation}
+	\subsection{Areas considered for future computerisation}
+	
+	Invoices could potentially be emailed to customers instead of having a paper copy sent through the post.
+	
+	
 
 \section{Solutions}
 
-\subsection{Alternative solutions}
+	\subsection{Alternative solutions}
+	\begin{itemize}
+	
+	\item use a web bases program
+	
+	\item improve the physical filing system
+	
+	\item
+	\end{itemize}
 
-\subsection{Justification of chosen solution}
+	\subsection{Justification of chosen solution}
+	
+	\begin{itemize}
+	
+	\item I know how to program in python already whereas I don't know how to make a web-based system
+	
+	\item They system can be accessed from anywhere with an internet connection by multiple people simultaneously
+
+	
+	\end{itemize}	 
+
+
+\end{document}
